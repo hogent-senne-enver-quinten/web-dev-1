@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Specificity</title>
+  <style>
+    body {
+      font-size: 1.5em;
+    }
+
+    body > p {
+      background-color: red;
+      font-style: italic;
+    }
+
+    p {
+      background-color: green;
+      color:orange;
+    }
+
+    h1 + p {
+      color: white;
+      font-style: normal;
+    }
+  </style>
+</head>
+<body>
+  <h1>CSS cascade and inheritance</h1>
+  <p>De font-size is 1.5em, de font-style is normal, de color is white en de background-color is red</p>
+</body>
+</html>

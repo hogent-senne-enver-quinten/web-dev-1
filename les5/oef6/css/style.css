@@ -1,0 +1,57 @@
+body {
+  font-family: monospace;
+}
+
+h3 {
+  font-size: 1.2em;
+}
+
+table,
+td,
+th {
+  border: 1px solid black;
+  border-collapse: collapse;
+  padding: 5px;
+  text-align: center;
+}
+
+/* eerste tabel */
+
+table:first-of-type tr:nth-of-type(2) {
+  background-color: gold;
+}
+
+table:first-of-type tr:nth-of-type(3) {
+  background-color: silver;
+}
+
+table:first-of-type tr:nth-of-type(4), table:first-of-type tr:nth-of-type(5)   {
+  background-color: peru;
+}
+
+/* tweede tabel */
+
+table:nth-of-type(2) tr:first-of-type th:first-of-type {
+  background-color: palegreen;
+}
+
+table:nth-of-type(2) tr:first-of-type th:nth-of-type(2) {
+  background-color: lightsteelblue;
+}
+
+table:nth-of-type(2) tr:first-of-type th:last-of-type {
+  background-color: lightpink;
+}
+
+/* derde tabel */
+table:nth-of-type(3) tr:first-of-type th:nth-of-type(2), table:nth-of-type(3) tr:nth-of-type(2) td:nth-of-type(2) {
+  background-color: palegreen;
+}
+
+table:nth-of-type(3) tr:first-of-type th:nth-of-type(3), table:nth-of-type(3) tr:nth-of-type(2) td:nth-of-type(3), table:nth-of-type(3) tr:nth-of-type(3) td:nth-of-type(2) {
+  background-color: lightsteelblue;
+}
+
+table:nth-of-type(3) tr:first-of-type th:last-of-type, table:nth-of-type(3) tr:nth-of-type(2) td:nth-of-type(4), table:nth-of-type(3) tr:nth-of-type(3) td:nth-of-type(3), table:nth-of-type(3) tr:nth-of-type(4) td:nth-of-type(2) {
+  background-color: lightpink;
+}
