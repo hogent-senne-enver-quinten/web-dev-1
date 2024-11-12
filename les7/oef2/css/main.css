@@ -7,7 +7,7 @@ nav {
 }
 nav ul {
   border: 1px solid #000;
-  list-style-type: none;
+  list-style: none;
   padding: 0;
   margin: 0;
 }
