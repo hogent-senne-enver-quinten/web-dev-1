@@ -1,0 +1,21 @@
+* {
+  box-sizing: border-box;
+}
+
+/* Opmaak van de boxes */
+.flex-container > div {
+  border: 1px solid #000;
+  background-color: lightgreen;
+  padding: 10px;
+  flex: 1;
+}
+
+/* Plaats je oplossing hieronder */
+
+.flex-container {
+  display: flex;
+}
+
+#item1, #item5 {
+  flex: 2;
+}
