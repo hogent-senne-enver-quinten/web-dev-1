@@ -1,0 +1,66 @@
+* {
+  box-sizing: border-box;
+}
+
+/* De hoogte en de rand van het voorbeeld div-element instellen */
+#center_example {
+  height: 5em;
+  border: 1px solid #000;
+}
+
+/* De tekst horizontaal en verticaal centreren
+met CSS Grid. Een child-element rond de tekst 
+voorzien is hierbij niet nodig.*/
+.grid-center {
+  display: grid;
+  justify-items: center;
+  align-items: center;
+}
+
+/* Plaats je oplossing hieronder */
+/*********************************/
+.grid-container {
+  display: grid;
+  gap: 0.2rem;
+  width: fit-content;
+}
+
+.grid-container div {
+  display: grid;
+  width: 5rem;
+  height: 5rem;
+  font-size: 2rem;
+  color: darkblue;
+  background-color: cyan;
+  border: 1px solid darkblue;
+  align-items: center;
+  justify-items: center;
+}
+
+#box1, #box2, #box3, #box4, #box5 {
+  grid-row: 2;
+}
+
+#box1 {
+  grid-column: 1;
+}
+
+#box2 {
+  grid-column: 2;
+}
+
+#box3 {
+  grid-column: 3;
+}
+
+#box4 {
+  grid-column: 4;
+}
+
+#box5 {
+  grid-column: 5;
+}
+
+#box6, #box7, #box8 {
+  grid-column: 4;
+}
