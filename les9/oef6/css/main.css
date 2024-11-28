@@ -1,0 +1,72 @@
+body {
+    font-size: 1.2em;
+    font-family: sans-serif;
+    line-height: 1.5;
+    margin: 0;
+}
+
+nav {
+    color: #cccccc;
+    background-color: #343a40;
+    padding: 14px;
+}
+
+main {
+    padding-left: 14px;
+    padding-right: 14px;
+    max-width: 640px;
+    display: grid;
+    justify-self: center;
+}
+
+a {
+    color: #9a9a9a;
+    text-decoration: none;
+    display: block;
+    padding: 3px 16px;
+}
+
+a:hover:not(.active) {
+    text-decoration: underline;
+}
+
+a.active {
+    color: white;
+}
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+#hamburger-icon {
+    cursor: pointer;
+}
+
+ul {
+    display: none;
+}
+
+#menu-checkbox:checked + ul {
+    display: block;
+}
+
+#menu-checkbox {
+    display: none;
+}
+
+@media screen and (min-width: 576px) {
+    ul {
+        display: flex;
+        flex-direction: row;
+    }
+
+    li {
+        padding: 0 7px;
+    }
+
+    label {
+        display: none;
+    }
+}
